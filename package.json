@@ -3,11 +3,11 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"dev": "vite dev",
+		"dev": "vite dev && format",
 		"build": "vite build",
 		"preview": "vite preview",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"check": "format && svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "format && svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write ."
 	},
@@ -21,6 +21,7 @@
 		"eslint": "^8.56.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.35.1",
+		"mdsvex": "^0.11.0",
 		"prettier": "^3.1.1",
 		"prettier-plugin-svelte": "^3.1.2",
 		"svelte": "^4.2.7",
@@ -34,6 +35,7 @@
 		"@fontsource/jetbrains-mono": "^5.0.18",
 		"@fontsource/manrope": "^5.0.18",
 		"lucide-svelte": "^0.309.0",
-		"open-props": "^1.6.17"
+		"open-props": "^1.6.17",
+		"shiki": "^0.14.7"
 	}
 }
