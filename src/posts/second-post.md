@@ -8,6 +8,13 @@ categories:
 published: true
 ---
 
+<script>
+  import Counter from "../components/counter.svelte"
+</script>
+
+
+### Table of Contents
+
 ### Markdown
 
 Hey Friends
@@ -17,3 +24,8 @@ function greet(name: string) {
 	console.log(`Hey ${name}! `);
 }
 ```
+
+
+### Counter
+
+<Counter/>

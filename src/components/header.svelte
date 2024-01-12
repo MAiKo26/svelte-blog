@@ -1,5 +1,6 @@
 <script>
 	import * as config from '$lib/config';
+	import Toggle from './toggle.svelte';
 </script>
 
 <nav>
@@ -7,10 +8,10 @@
 	<ul class="links">
 		<li><a href="/about">About</a></li>
 		<li><a href="/contact">Contact</a></li>
-		<li><a href="_blank">RSS</a></li>
+		<li><a href="/rss.xml">RSS</a></li>
 	</ul>
 
-	<button>Toggle</button>
+	<Toggle />
 </nav>
 
 <style>
